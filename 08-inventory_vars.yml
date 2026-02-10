@@ -1,0 +1,7 @@
+- name: task level varibales
+  hosts: local
+  connection: local
+  tasks:
+    - name: print course details
+      ansible.builtin.debug:
+        msg: "Second Agent name is :{{ COURSE }}"
