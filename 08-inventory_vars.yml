@@ -4,4 +4,4 @@
   tasks:
     - name: print course details
       ansible.builtin.debug:
-        msg: "Second Agent name is :{{ COURSE }}"
+        msg: " course is : {{ COURSE }}"
