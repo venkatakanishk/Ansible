@@ -1,0 +1,14 @@
+- name: task level varibales
+  hosts: local
+  conection: local
+  vars:
+    name: "Kanishk"
+    age: 26
+    number: 6303987465
+    Gender: Male
+  tasks:
+    - name: print another agent details
+      name: "harsha"
+      ansible.builtin.debug:
+        msg: "Second Agent name is :{{ name }}, age is : {{age}}, Gender is : {{Gender}}"
+    
