@@ -1,6 +1,6 @@
 - name: task level varibales
   hosts: local
-  conection: local
+  connection: local
   vars:
     name: "Kanishk"
     age: 26
