@@ -9,7 +9,7 @@
   tasks:
   - name: Print Agent details
     ansible.builtin.debug:
-    msg: "Agent name is :{{ name }}, age is : {{age}}, Gender is : {{Gender}}"
+      msg: "Agent name is :{{ name }}, age is : {{age}}, Gender is : {{Gender}}"
     
 
   
