@@ -1,0 +1,15 @@
+- name: play level varibales
+  hosts: local
+  connection: local
+  vars:
+    name: "Kanishk"
+    age: 26
+    number: 6303987465
+    Gender: Male
+  tasks:
+  - name: Print Agent details
+    ansible.builtin.debug:
+    msg: "Agent name is :{{ name }}, age is : {{age}}, Gender is : {{Gender}}"
+    
+
+  
