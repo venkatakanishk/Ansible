@@ -7,3 +7,9 @@
         name: nginx
         state: present
 
+  - name: start nginx
+      anisble.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
+
