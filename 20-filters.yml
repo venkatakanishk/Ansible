@@ -36,4 +36,4 @@
   tasks:
   - name: list to dict conversion
     ansible.builtin.debug:
-      msg: "{{ tagsList | items2dict }}""
+      msg: "{{ tagsList | items2dict }}"
