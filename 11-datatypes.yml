@@ -1,0 +1,15 @@
+- name: Example on data types
+  hosts: local
+  connection: local
+  vars:
+    Name: "Venkata Kanishk"
+    Age:  26
+    IS_SALARIED: true #bool
+    DETAILS:  # dist
+      Gender: Male
+      DOB_YEAR: 1999
+    hobies:    #list
+    - cricket
+    - hockey
+    
+      
