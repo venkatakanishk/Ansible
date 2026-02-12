@@ -1,8 +1,8 @@
-- Name: Condition in ansible
+- name: Condition in ansible
   hosts: local
   connections: local
   vars:
-    name: Hotstar
+    Name: Hotstar
     IS_LIVE: true
   tasks:
   - name: checking is live or not
