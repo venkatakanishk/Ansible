@@ -10,4 +10,7 @@
     ansible.builtin.debug:
       msg: "yes os family is RedHat"
     when: ansible_facts.os_family ==  "RedHat"
-  
+  - name: print package manager
+    ansible.builtin.debug:
+      msg: "Yes package manager is debian"
+    when: ansible.facts.family == "Ubuntu"
