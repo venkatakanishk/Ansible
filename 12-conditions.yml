@@ -1,6 +1,6 @@
 - name: Condition in ansible
   hosts: local
-  connections: local
+  connection: local
   vars:
     Name: Hotstar
     IS_LIVE: true
