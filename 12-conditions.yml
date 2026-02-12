@@ -1,4 +1,4 @@
-- name: Condition in ansible
+- Name: Condition in ansible
   hosts: local
   connections: local
   vars:
