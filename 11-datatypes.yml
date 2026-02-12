@@ -11,8 +11,8 @@
     hobies:    #list
     - cricket
     - hockey
-    tasks:
-      - name: print varibales
+  tasks:
+  - name: print varibales
     ansible.builtin.debug:
       msg: |
         Name is: {{ Name }}
