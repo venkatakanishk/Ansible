@@ -1,0 +1,10 @@
+- name: Coditions learning
+  hosts: local
+  connection: local
+  vars:
+    number: 7
+  tasks:
+  - name: number is greater than 5
+    ansible.builtin.debug:
+      msg: "yes number is greater than 5"
+    when: number > 5
