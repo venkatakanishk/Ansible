@@ -13,11 +13,11 @@
     - hockey
     tasks:
       - name: print varibales
-  ansible.builtin.debug:
-    msg: |
-      Name is: {{ Name }}
-      Age: {{ Age }}
-      Salaried?: {{ IS_SALARIED }}
-      Details: {{ DETAILS }}
-      Daily Hobies: {{ hobies }}  
-    
+    ansible.builtin.debug:
+      msg: |
+        Name is: {{ Name }}
+        Age: {{ Age }}
+        Salaried?: {{ IS_SALARIED }}
+        Details: {{ DETAILS }}
+        Daily Hobies: {{ hobies }}  
+        
