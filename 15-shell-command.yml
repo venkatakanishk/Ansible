@@ -10,4 +10,4 @@
     ansible.builtin.shell: cat /etc/passwd | grep root
     register: users_output
     ansible.builtin.debug:
-      msg: "out put is {{ users_output }}
+      msg: "out put is {{ users_output }}"
