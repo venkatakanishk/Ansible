@@ -24,14 +24,14 @@
       ]
 
 
-  # tasks:
-  # - name: list to dict conversion
-  #   ansible.builtin.debug:
-  #     msg: "{{ topics | split(',') }}"
-  # tasks:
-  # - name:  dict to items list conversion
-  #   ansible.builtin.debug:
-  #     msg: "{{ tagdict | dict2items }}"
+  tasks:
+  - name: list to dict conversion
+    ansible.builtin.debug:
+      msg: "{{ topics | split(',') }}"
+  tasks:
+  - name:  dict to items list conversion
+    ansible.builtin.debug:
+      msg: "{{ tagdict | dict2items }}"
 
   tasks:
   - name: list to dict conversion
