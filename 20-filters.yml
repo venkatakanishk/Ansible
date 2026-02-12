@@ -7,12 +7,33 @@
       name: Ansible
       project: RoboShop
       course: DevOps
+    tagsList:
+      [
+          {
+              "key": "name",
+              "value": "Ansible"
+          },
+          {
+              "key": "project",
+              "value": "RoboShop"
+          },
+          {
+              "key": "course",
+              "value": "DevOps"
+          }
+      ]
+
 
   # tasks:
   # - name: list to dict conversion
   #   ansible.builtin.debug:
   #     msg: "{{ topics | split(',') }}"
+  # tasks:
+  # - name:  dict to items list conversion
+  #   ansible.builtin.debug:
+  #     msg: "{{ tagdict | dict2items }}"
+
   tasks:
-  - name:  dict to items list conversion
+  - name: list to dict conversion
     ansible.builtin.debug:
-      msg: "{{ tagdict | dict2items }}"
+      msg: "{{ tagsList | items2dict }}""
