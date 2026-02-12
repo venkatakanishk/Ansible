@@ -12,7 +12,7 @@
   tasks:
   - name: " Name of the student"
     vars:
-      Name: "Name from the task level"
+      Name: "Ansible from the task level"
     ansible.builtin.debug:
       msg: "NAME is : {{ Name }}"
 
