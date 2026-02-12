@@ -1,0 +1,11 @@
+- name: Condition in ansible
+  hosts: local
+  connections: local
+  vars:
+    name: Hotstar
+    IS_LIVE: true
+  tasks:
+  - name: checking is live or not
+    ansible.buitin.debug:
+      msg: "{{ name }} is  {{ IS_LIVE }}
+    when: IS_LIVE
