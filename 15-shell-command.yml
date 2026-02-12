@@ -1,0 +1,9 @@
+- name: shell versus command Example
+  hosts: local
+  connection: local
+  tasks:
+    - name: print command module
+      ansible.builtin.command: cat /etc/users/password | grep root
+      register: users_output
+      
+    
