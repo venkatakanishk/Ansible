@@ -3,7 +3,16 @@
   connection: local
   vars:
     topics: linux, shell, python, unix
+    tagdict:
+      name: Ansible
+      project: RoboShop
+      course: DevOps
+
+  # tasks:
+  # - name: list to dict conversion
+  #   ansible.builtin.debug:
+  #     msg: "{{ topics | split(',') }}"
   tasks:
-  - name: list to dict conversion
+  - name:  dict to items list conversion
     ansible.builtin.debug:
-      msg: "{{ topics | split(',') }}"
+      msg: "{{ tagdict | dict2items }}"
