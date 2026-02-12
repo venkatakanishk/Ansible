@@ -13,7 +13,7 @@
   - name: " Name of the student"
     vars:
       Name: "Name from the task level"
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "NAME is : {{ Name }}"
 
 
