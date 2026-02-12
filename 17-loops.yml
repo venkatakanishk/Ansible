@@ -1,6 +1,6 @@
 - name: Installing nginx and java
   hosts: local
-  connection:
+  connection: local
   become: yes
   tasks:
   - name: Install both packages
