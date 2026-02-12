@@ -11,5 +11,13 @@
     hobies:    #list
     - cricket
     - hockey
-    
+    tasks:
+      - name: print varibales
+    anisble.builtin.debug:
+      msg: |
+        Name is: {{ Name }}
+        Age: {{ Age }}
+        Salaried?: {{ IS_SALARIED }}
+        Details: {{ DETAILS }}
+        Daily Hobies: {{ hobies }}  
       
