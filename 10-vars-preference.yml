@@ -1,0 +1,19 @@
+- name: checking vars preference
+  hosts: local
+  connection: local
+    vars:
+      Name: " Ansible from play"
+    vars_file:
+    - course.yml
+    vars_prompt:
+    - name: NAME
+      prompt: "Enter the name"
+      private: false
+  tasks:
+  - name: " Name of the student"
+    vars:
+      Name: "Name from the task level"
+    ansible.buitin.debug:
+      msg: "NAME is : {{ Name }}"
+
+
