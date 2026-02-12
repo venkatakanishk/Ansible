@@ -9,10 +9,10 @@
   - name: Name
     prompt: "Enter the name"
     private: false
-  tasks:
-  - name: " Name of the student"
-    vars:
-      Name: "Ansible from the task level"
+  # tasks:
+  # - name: " Name of the student"
+  #   vars:
+  #     Name: "Ansible from the task level"
     ansible.builtin.debug:
       msg: "NAME is : {{ Name }}"
 
