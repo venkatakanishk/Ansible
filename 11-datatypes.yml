@@ -13,7 +13,7 @@
     - hockey
     tasks:
       - name: print varibales
-  anisble.builtin.debug:
+  ansible.builtin.debug:
     msg: |
       Name is: {{ Name }}
       Age: {{ Age }}
