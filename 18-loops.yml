@@ -1,0 +1,12 @@
+- name: Installing nginx and java
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: Install both packages
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name: "nginx", state: "present" }
+    - { name: "java", state: "absent" }
