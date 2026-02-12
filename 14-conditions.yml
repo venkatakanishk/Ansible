@@ -13,4 +13,4 @@
   - name: print package manager
     ansible.builtin.debug:
       msg: "Yes package manager is debian"
-    when: ansible.facts.family == "Ubuntu"
+    when: ansible_facts.os_family == "Ubuntu"
