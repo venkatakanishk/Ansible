@@ -8,5 +8,5 @@
       vars:
         name: "harsha"
       ansible.builtin.debug:
-        msg: "Second Agent name is :{{ name }}, age is : {{age}}, Gender is : {{Gender}}"
+        msg: "Second Agent name is :{{ name }}, age is : {{ age }}, Gender is : {{ Gender }}"
     
